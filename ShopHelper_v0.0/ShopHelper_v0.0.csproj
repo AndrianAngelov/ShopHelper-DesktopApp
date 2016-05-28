@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C122D03-B2EB-45F2-8A4A-57EF447D437D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopHelper_v0._0</RootNamespace>
+    <AssemblyName>ShopHelper_v0.0</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Anyo.WindowsForms.CommonFunctionality">
+      <HintPath>DLLs\ThirdPartyCommonFunctionality\Anyo.WindowsForms.CommonFunctionality.dll</HintPath>
+    </Reference>
+    <Reference Include="Anyo.WindowsForms.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\ThirdPartyControls\Anyo.WindowsForms.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Anyo.WindowsForms.MessageBoxes, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\ThirdPartyMessageBox\Anyo.WindowsForms.MessageBoxes.dll</HintPath>
+    </Reference>
+    <Reference Include="Anyo.WindowsForms.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\ThirdPartyValidation\Anyo.WindowsForms.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="MRG.Controls.UI">
+      <HintPath>DLLs\ThirdPartyControls\MRG.Controls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\RolesForSpecificForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>RolesForSpecificForm.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.AdminSubForms\RolesCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.AdminSubForms\RolesCenter.Designer.cs">
+      <DependentUpon>RolesCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.AdminSubForms\UsersAccountsCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.AdminSubForms\UsersAccountsCenter.Designer.cs">
+      <DependentUpon>UsersAccountsCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenter.Designer.cs">
+      <DependentUpon>InventoryCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteCategory.Designer.cs">
+      <DependentUpon>EditDeleteCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteProducts.Designer.cs">
+      <DependentUpon>EditDeleteProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\InventoryCenterSubForms\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenter.Designer.cs">
+      <DependentUpon>VendorsCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenterSubForms\AddVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenterSubForms\AddVendors.Designer.cs">
+      <DependentUpon>AddVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenterSubForms\EditDeleteVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms.ManagerSubForms\VendorsCenterSubForms\EditDeleteVendors.Designer.cs">
+      <DependentUpon>EditDeleteVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ShopHelperService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Multithreading\PopulateUIFromSeparateThread.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithCategories.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithFormsRoles.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithProducts.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithStores.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithTowns.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithUsers.cs" />
+    <Compile Include="Utilities\Multithreading\PopulateWithVendors.cs" />
+    <Compile Include="Utilities\RolesCommonFunctionality\RolesHelper.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.AdminSubForms\RolesCenter.resx">
+      <DependentUpon>RolesCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.AdminSubForms\UsersAccountsCenter.resx">
+      <DependentUpon>UsersAccountsCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenter.resx">
+      <DependentUpon>InventoryCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenterSubForms\AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteCategory.resx">
+      <DependentUpon>EditDeleteCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenterSubForms\EditDeleteProducts.resx">
+      <DependentUpon>EditDeleteProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\InventoryCenterSubForms\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\VendorsCenter.resx">
+      <DependentUpon>VendorsCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\VendorsCenterSubForms\AddVendors.resx">
+      <DependentUpon>AddVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms.ManagerSubForms\VendorsCenterSubForms\EditDeleteVendors.resx">
+      <DependentUpon>EditDeleteVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Properties\RolesForSpecificForm.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>RolesForSpecificForm.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelperService1.wsdl" />
+    <None Include="Service References\ShopHelperService\ShopHelperService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelperService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelperService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelper_v0._0.ShopHelperService.CategoryDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelper_v0._0.ShopHelperService.ProductDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelper_v0._0.ShopHelperService.StoreDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelper_v0._0.ShopHelperService.TownDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ShopHelperService\ShopHelper_v0._0.ShopHelperService.VendorDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MngM_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reports_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NS_v1.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewbieCode_v2.png.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_center1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewbieCode_v3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addVendors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editVendors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnershipVendors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addProduct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editProducts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underConstruction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ShopHelperService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShopHelperService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShopHelperService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShopHelperService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopHelper_CartLogo_v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopHelper_CartLogo_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminIcon_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roles_Testicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RolesCenterIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopHelper_CartLogo_v4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopHelper_HoodHelper_v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeaderLogo_OneLine.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
